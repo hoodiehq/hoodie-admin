@@ -8,7 +8,8 @@
     "build": "ember build",
     "start": "ember server",
     "test": "ember test",
-    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post",
+    "postpublish": "greenkeeper-postpublish"
   },
   "repository": {
     "type": "git",
@@ -50,6 +51,7 @@
     "ember-resolver": "^2.0.3",
     "express": "^4.13.4",
     "glob": "^4.5.3",
+    "greenkeeper-postpublish": "^1.0.0",
     "hoodie": "^21.0.1",
     "http-proxy-middleware": "^0.15.0",
     "loader.js": "^4.0.1",
