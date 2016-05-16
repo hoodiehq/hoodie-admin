@@ -1,0 +1,25 @@
+sudo: false
+language: node_js
+cache:
+  directories:
+    - node_modules
+    - bower_components
+notifications:
+  email: false
+node_js:
+  - 4
+before_install:
+  - npm i -g npm@^2.0.0
+before_script:
+  - npm prune
+  - bower prune
+install:
+  - npm install -g bower
+  - npm install -g phantomjs-prebuilt
+  - npm install
+  - bower install
+after_success:
+  - npm run semantic-release
+branches:
+  except:
+    - "/^v\\d+\\.\\d+\\.\\d+$/"

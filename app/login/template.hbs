@@ -1,0 +1,15 @@
+<h1>Login</h1>
+
+{{#if currentError}}
+<p class="error">
+  {{currentError}}
+</p>
+{{/if}}
+
+<form>
+  <label>Password:
+    {{input type='password' value=currentPasswordValue}}
+  </label>
+
+  <button {{action 'signIn' currentPasswordValue}}>Sign in</button>
+</form>

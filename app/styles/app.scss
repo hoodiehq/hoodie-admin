@@ -1,0 +1,29 @@
+html {
+  background: #eee;
+  font: 16px/1.5 Helvetica, Arial;
+}
+
+body {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  background: #fff;
+}
+
+button {
+  padding: 4px 8px;
+  background: #ddd;
+  border: 1px solid #ccc;
+  margin: 4px 0;
+  cursor: pointer;
+}
+
+input {
+  font: inherit;
+}
+
+.error {
+  color: #c00;
+  font-weight: bold;
+}
