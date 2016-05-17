@@ -1,5 +1,5 @@
-/* global AccountAdmin */
 import Ember from 'ember';
+import HoodieAdmin from 'npm:@hoodie/admin-client';
 
 const {
   computed: { alias }
@@ -8,7 +8,10 @@ const {
 export default Ember.Service.extend({
   init() {
     this._super(...arguments);
-    this.admin = new AccountAdmin({url: '/hoodie/account/api'});
+    this.admin = new HoodieAdmin();
+
+    // for debugging only
+    window.hoodieAdmin = this.admin;
   },
 
   signIn({username, password}) {
