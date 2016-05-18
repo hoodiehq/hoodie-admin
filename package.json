@@ -8,7 +8,7 @@
     "build": "ember build",
     "start": "ember server",
     "test": "ember test",
-    "presemantic-release": "ember build --output-path=public --environment=production",
+    "presemantic-release": "ember build --environment=production",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post",
     "postpublish": "greenkeeper-postpublish"
   },
