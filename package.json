@@ -13,7 +13,7 @@
     "postpublish": "greenkeeper-postpublish"
   },
   "files": [
-    "public"
+    "dist"
   ],
   "repository": {
     "type": "git",
