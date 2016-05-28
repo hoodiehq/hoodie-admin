@@ -27,3 +27,12 @@ input {
   color: #c00;
   font-weight: bold;
 }
+
+button.danger {
+  background-color: #FF0000;
+  color: white;
+}
+
+button.danger:active {
+  background-color: #CC0000;
+}

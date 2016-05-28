@@ -19,5 +19,14 @@ export default Route.extend({
       transition.abort();
       this.transitionTo('login');
     }
+  },
+
+  actions: {
+    deleteAccount(account) {
+      get(this, 'accountAdmin.accounts').remove(account.id)
+      .then(() => {
+        this.transitionTo('accounts');
+      });
+    }
   }
 });
