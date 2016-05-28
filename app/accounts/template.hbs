@@ -4,6 +4,8 @@
 <p>Here are the accounts:</p>
 <ul>
   {{#each model as |account|}}
-    <li>{{account-details account=account}}</li>
+    {{#link-to 'account' account}}
+      <li>{{account-details account=account}}</li>
+    {{/link-to}}
   {{/each}}
 </ul>
