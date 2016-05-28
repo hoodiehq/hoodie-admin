@@ -1,6 +1,8 @@
 <p>Hello, {{accountAdmin.username}}!</p>
 <p><button {{action 'signOut'}}>Sign out</button></p>
 
+{{new-user createUser=(action 'createUser')}}
+
 <p>Here are the accounts:</p>
 <ul>
   {{#each model as |account|}}

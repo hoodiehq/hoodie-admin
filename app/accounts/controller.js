@@ -14,6 +14,13 @@ export default Controller.extend({
       get(this, 'accountAdmin').signOut().then(() => {
         this.transitionToRoute('login');
       });
+    },
+
+    createUser(user) {
+      get(this, 'accountAdmin.accounts').add(user)
+      .then((user) => {
+        this.transitionToRoute('account', user.id);
+      });
     }
   }
 });

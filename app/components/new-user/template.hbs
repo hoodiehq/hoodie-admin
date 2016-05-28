@@ -1,0 +1,11 @@
+<form>
+  <label>
+    New user's name:
+    {{input value=username data-test-selector="new-user-name"}}
+  </label>
+  <label>
+    New user's password:
+    {{input type='password' value=password data-test-selector="new-user-password"}}
+  </label>
+  <button {{action createUser (hash username=username password=password)}} data-test-selector='new-user-submit'>Add user</button>
+</form>
