@@ -23,10 +23,12 @@ export default Route.extend({
 
   actions: {
     deleteAccount(account) {
-      get(this, 'accountAdmin.accounts').remove(account.id)
-      .then(() => {
-        this.transitionTo('accounts');
-      });
+      if (confirm(`Are you sure you'd like to delete ${account.username}'s account?`)) {
+        get(this, 'accountAdmin.accounts').remove(account.id)
+        .then(() => {
+          this.transitionTo('accounts');
+        });
+      }
     }
   }
 });
