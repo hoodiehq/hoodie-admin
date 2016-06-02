@@ -1,0 +1,11 @@
+{{input type=inputType value=value}}
+{{#if (eq inputType 'password')}}
+  <button {{action (action (mut inputType) 'text')}} data-test-selector="password-visibility-toggle">
+    Show password
+  </button>
+{{else}}
+  <button {{action (action (mut inputType) 'password')}} data-test-selector="password-visibility-toggle">
+    Hide password
+  </button>
+{{/if}}
+

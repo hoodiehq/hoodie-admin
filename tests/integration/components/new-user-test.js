@@ -22,7 +22,7 @@ test('it renders', function(assert) {
 
   this.$('[data-test-selector="new-user-name"]').val(username);
   this.$('[data-test-selector="new-user-name"]').trigger('change');
-  this.$('[data-test-selector="new-user-password"]').val(password);
-  this.$('[data-test-selector="new-user-password"]').trigger('change');
+  this.$('[data-test-selector="new-user-password"] input').val(password);
+  this.$('[data-test-selector="new-user-password"] input').trigger('change');
   this.$('[data-test-selector="new-user-submit"]').click();
 });
