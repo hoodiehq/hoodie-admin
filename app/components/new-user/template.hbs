@@ -3,9 +3,11 @@
     New user's name:
     {{input value=username data-test-selector="new-user-name"}}
   </label>
+  <br>
   <label data-test-selector="new-user-password">
     New user's password:
     {{show-password-toggle value=password}}
   </label>
+  <br>
   <button {{action createUser (hash username=username password=password)}} data-test-selector='new-user-submit'>Add user</button>
 </form>
