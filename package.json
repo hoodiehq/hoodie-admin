@@ -60,7 +60,7 @@
     "greenkeeper-postpublish": "^1.0.0",
     "hoodie": "^22.0.1",
     "http-proxy-middleware": "^0.15.0",
-    "loader.js": "^4.0.1",
+    "loader.js": "^4.0.6",
     "morgan": "^1.7.0",
     "semantic-release": "^6.2.2"
   },
