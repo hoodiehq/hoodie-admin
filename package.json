@@ -56,7 +56,7 @@
     "ember-load-initializers": "^0.5.1",
     "ember-resolver": "^2.0.3",
     "express": "^4.13.4",
-    "glob": "^4.5.3",
+    "glob": "^7.0.4",
     "greenkeeper-postpublish": "^1.0.0",
     "hoodie": "^22.0.1",
     "http-proxy-middleware": "^0.16.0",
