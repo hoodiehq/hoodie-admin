@@ -64,6 +64,7 @@
     "semantic-release": "^6.2.2"
   },
   "dependencies": {
-    "ember-truth-helpers": "^1.2.0"
+    "ember-truth-helpers": "^1.2.0",
+    "hapi": "^15.2.0"
   }
 }
