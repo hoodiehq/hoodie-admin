@@ -10,13 +10,10 @@
 // };
 //
 
-var getHoodieServer = require('hoodie');
+var hoodie = require('hoodie');
+var Hapi = require('hapi');
 var url = require('url');
 var proxy = require('http-proxy-middleware');
-
-var options = {
-  port: 4201
-};
 
 module.exports = function(app) {
 
@@ -26,7 +23,18 @@ module.exports = function(app) {
 
   app.use('/hoodie', proxy({target: 'http://localhost:4201'}));
 
-  getHoodieServer(options, function (error, server, config) {
+  var server = new Hapi.Server();
+  server.connection({
+    host: 'localhost',
+    port: 4201
+  });
+
+  server.register({
+    register: hoodie,
+    options: {
+      // https://github.com/hoodiehq/hoodie/#hapi-plugin
+    }
+  }, function (error) {
     if (error) {
       var stack = new Error().stack.split('\n').slice(2).join('\n');
       return console.log('app', 'Failed to initialise:\n' + stack, error);
@@ -37,8 +45,8 @@ module.exports = function(app) {
     server.start(function () {
       console.log('Your Hoodie server has started on ' + url.format({
         protocol: 'http',
-        hostname: config.connection.host,
-        port: config.connection.port
+        hostname: 'localhost',
+        port: 4201
       }));
     });
   });
