@@ -1,5 +1,8 @@
 {{link-to '<- Back to account list' 'accounts'}}
-<p>Username: {{model.username}}</p>
+
+{{#each-in model as |key value|}}
+<p>{{key}}: {{value}}</p>
+{{/each-in}}
 
 <p>
   <button class="danger" {{action 'deleteAccount' model}}>Delete account</button>
