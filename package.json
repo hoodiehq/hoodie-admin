@@ -57,7 +57,7 @@
     "express": "^4.13.4",
     "glob": "^7.0.4",
     "greenkeeper-postpublish": "^1.0.0",
-    "hoodie": "^24.0.0",
+    "hoodie": "^25.0.0",
     "http-proxy-middleware": "^0.17.0",
     "loader.js": "^4.0.1",
     "morgan": "^1.7.0",
