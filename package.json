@@ -33,7 +33,7 @@
   },
   "homepage": "https://github.com/hoodiehq/hoodie-admin#readme",
   "devDependencies": {
-    "@hoodie/admin-client": "1.0.2",
+    "@hoodie/admin-client": "2.0.1",
     "broccoli-asset-rev": "^2.4.2",
     "ember-ajax": "^2.0.1",
     "ember-browserify": "^1.1.9",
