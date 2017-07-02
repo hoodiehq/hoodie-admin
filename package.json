@@ -9,8 +9,7 @@
     "start": "ember server",
     "test": "ember test",
     "presemantic-release": "ember build --environment=production",
-    "semantic-release": "semantic-release pre && npm publish && semantic-release post",
-    "postpublish": "greenkeeper-postpublish"
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
   "files": [
     "dist"
@@ -57,7 +56,6 @@
     "ember-truth-helpers": "^1.2.0",
     "express": "^4.13.4",
     "glob": "^7.0.4",
-    "greenkeeper-postpublish": "^1.0.0",
     "hapi": "^16.0.0",
     "hoodie": "^24.0.0",
     "http-proxy-middleware": "^0.17.0",
