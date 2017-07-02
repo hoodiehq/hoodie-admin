@@ -1,15 +1,9 @@
 sudo: false
 language: node_js
-cache:
-  directories:
-    - node_modules
-    - bower_components
 notifications:
   email: false
 node_js:
-  - 4
-before_install:
-  - npm i -g npm@^2.0.0
+  - 6
 before_script:
   - npm prune
   - bower prune
