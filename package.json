@@ -37,7 +37,7 @@
     "ember-ajax": "^2.0.1",
     "ember-browserify": "^1.1.9",
     "ember-cli": "2.11.1",
-    "ember-cli-app-version": "^2.0.0",
+    "ember-cli-app-version": "^3.1.1",
     "ember-cli-babel": "^5.1.6",
     "ember-cli-dependency-checker": "^1.2.0",
     "ember-cli-htmlbars": "^1.0.3",
