@@ -59,7 +59,7 @@
     "hapi": "^16.0.0",
     "hoodie": "^24.0.0",
     "http-proxy-middleware": "^0.17.0",
-    "loader.js": "^4.2.2",
+    "loader.js": "^4.7.0",
     "morgan": "^1.7.0",
     "semantic-release": "^7.0.1"
   }
